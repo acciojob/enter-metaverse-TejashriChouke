@@ -8,6 +8,26 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	 <p id="status">Enter the Metaverse</p>
+    <button id="enterBtn">Enter</button>
+
+    <script>
+        // Get the elements by their IDs
+        const statusElement = document.getElementById('status');
+        const enterBtn = document.getElementById('enterBtn');
+
+        // Add click event listener to the button
+        enterBtn.addEventListener('click', function() {
+            // Change the text inside the <p> tag
+            statusElement.textContent = 'Entered Metaverse';
+
+            // Optionally, you can create an <h1> tag and append the text to it
+            const newHeading = document.createElement('h1');
+            newHeading.textContent = statusElement.textContent;
+
+            // Append the new <h1> tag to the body or any other container element
+            document.body.appendChild(newHeading);
+        });
     <script type="text/javascript" src="./script.js">
 </script>
 
